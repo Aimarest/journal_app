@@ -1,9 +1,14 @@
+import { Routes, Route } from 'react-router-dom';
+import { AppRouter } from "./router/AppRouter"
 
 
 export const JournalApp = () => {
   return (
-    <>
-        <h1>Hello from Journal app!! </h1>
-    </>
+  
+    <Routes>
+      <Route path='/' element={ <AppRouter/> }/>
+        </Routes>
+      
+    
   )
 }
