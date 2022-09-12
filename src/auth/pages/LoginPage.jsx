@@ -1,6 +1,6 @@
 import { Google } from '@mui/icons-material';
-import { TextField, Typography, Button , Link} from '@mui/material';
-import {Grid} from '@mui/material';
+import { Grid, TextField, Typography, Button , Link} from '@mui/material';
+
 import { Link as RouterLink } from 'react-router-dom';
 export const LoginPage = () => {
   return (
