@@ -1,13 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
-import { AppRouter } from "./router/AppRouter"
 
+import { AppRouter } from "./router/AppRouter"
+import { AppTheme } from './theme';
 
 export const JournalApp = () => {
   return (
   
-    <Routes>
-      <Route path='/' element={ <AppRouter/> }/>
-        </Routes>
+<AppTheme>
+   <AppRouter/> 
+</AppTheme>
+
+     
       
     
   )
