@@ -1,4 +1,5 @@
-import { TextField, Typography } from '@mui/material';
+import { Google } from '@mui/icons-material';
+import { TextField, Typography, Button } from '@mui/material';
 import {Grid} from '@mui/material';
 
 export const LoginPage = () => {
@@ -17,20 +18,33 @@ sx={{backgroundColor:'white', padding:3, borderRadius: 2}}>
   <Typography variant='h5' sx={{ mb:1 }}>Login</Typography>
   <form>
     <Grid container>
-      <Grid item xs={12} md={6} sx={{mt:2}}>
+      <Grid item xs={12} md={6}  sx={{mt:2}}>
         <TextField 
         label="Correo" 
         type="email" 
         placeholder='correo@google.com'
         fullwidth 
         />
-           <Grid item xs={12} md={6} sx={{mt:2}}>
+           <Grid item xs={12} md={6}  sx={{mt:2}}>
         <TextField 
         label="Password" 
         type="password" 
         placeholder='Contraseña'
         fullwidth 
         />
+      </Grid>
+      <Grid container spacing={2} sx={{ mb:2 , mt:1}}>
+        <Grid item xs={12} sm={6}>
+          <Button variant='contained' fullWidth>
+            Login
+          </Button>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Button variant='contained' fullWidth>
+           <Google/>
+           <Typography sx={{ml:1}}>Google</Typography>
+          </Button>
+        </Grid>
       </Grid>
       </Grid>
     </Grid>
