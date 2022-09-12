@@ -43,8 +43,9 @@ export const RegisterPage = () => {
 
 
           <Grid container direction='row' justifyContent='end'>
-            <Link component={ RouterLink } color='inherit' to="/auth/login">
            <Typography sx={{mr:1}}>¿Ya tienes cuenta?</Typography>
+            <Link component={ RouterLink } color='inherit' to="/auth/login">
+          
            Ingresar
             </Link>
           </Grid>
