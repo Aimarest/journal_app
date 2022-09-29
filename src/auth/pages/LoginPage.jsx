@@ -1,9 +1,17 @@
 import { Google } from '@mui/icons-material';
-import { Grid, TextField, Typography, Button , Link} from '@mui/material';
-
+import { Grid, TextField, Typography, Button , Link} from '@mui/material'}
 import { Link as RouterLink } from 'react-router-dom';
 import { AuthLayout } from '../layout/AuthLayout';
+import { useForm } from '../../hooks';
+
 export const LoginPage = () => {
+
+  const { onInputChange, email, password } = useForm({
+      email: 'amarcosestevez@gmail.com',
+      password: '123456'
+    })
+
+
   return (
     <AuthLayout title="Login">
     <form>
@@ -14,6 +22,9 @@ export const LoginPage = () => {
               type="email" 
               placeholder='correo@google.com' 
               fullWidth
+              name='email'
+              value={email}
+              onChange={onInputChange}
             />
           </Grid>
 
@@ -23,6 +34,9 @@ export const LoginPage = () => {
               type="password" 
               placeholder='Contraseña' 
               fullWidth
+              name='password'
+              value={password}
+              onChange={onInputChange}
             />
           </Grid>
           
